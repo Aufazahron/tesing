@@ -1,0 +1,16 @@
+function myFunction() {
+   var mainFrameOne = document.getElementById("mainFrameOne"); 
+   var mainFrameTwo = document.getElementById("mainFrameTwo");
+
+   mainFrameOne.style.display = (
+       mainFrameOne.style.display == "none" ? "block" : "none"); 
+   mainFrameTwo.style.display = (
+       mainFrameTwo.style.display == "none" ? "block" : "none"); 
+}
+<div id="mainFrameOne">
+    <p>mainFrameOne</p>
+</div>
+<div id="mainFrameTwo" style="display:none;">
+    <p>mainFrameTwo</p>
+</div>
+<button onclick="myFunction()">Click me</button>
