@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="CodeHim">
+    <title>Inventaris Lab TJKT</title>
+    
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Demo CSS (No need to include it into your project) -->
+	<!-- <link rel="stylesheet" href="css/demo.css"> -->
+  
+  </head>
+  <body class="grid-container">    
+
+  <div class="barangcart item2">
+      <ul>
+        <li>
+            <table id="cart-content">
+              <thead>
+                <tr>
+                  <th width="150px">Image</th>
+                  <th>Name</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            <a href="#" id="checkout-btn" class="cart-btn" onclick="aw()">Checkout</a>
+            <a href="#" id="clear-cart" class="cart-btn">Clear Cart</a>
+        </li>
+      </ul>
+  </div>
+
+ <div class="grid item3" id="grid">
+    <div class="card">
+      <img src="./img/image.png" class="card__image" alt="" width="200">
+      <div class="card__info">
+        <h4 class="card__title">Infokus</h4>
+        <!-- <p class="card__text">Maria A. Perna</p> -->
+        <button class="add-to-cart" data-id="1" onclick="a1()">Akw Mw</button>
+      </div>
+    </div>   
+    <div class="card">
+      <img src="./img/image.png" class="card__image" alt="" width="200">
+      <div class="card__info">
+        <h4 class="card__title">Colokan</h4>
+        <!-- <p class="card__text">Maria A. Perna</p> -->
+        <button class="add-to-cart" data-id="2" onclick="a2()">Akw Mw</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/image.png" class="card__image" alt="" width="200">
+      <div class="card__info">
+        <h4 class="card__title">Monitor</h4>
+        <button class="add-to-cart" data-id="3" onclick="a3()">Akw Mw</button>
+      </div>
+    </div>
+    <!-- <div class="card">
+      <img src="./img/image.png" class="card__image" alt="">
+      <div class="card__info">
+        <h4 class="card__title">Infokus</h4>
+        <p class="card__text">Maria A. Perna</p>
+        <button class="add-to-cart" data-id="8">Akw Mw</button>
+      </div>
+    </div> -->
+  </div>
+  <form>
+    <input type="checkbox" name="Infokus" id="Infokus">
+    <input type="checkbox" name="Colokan" id="Colokan">
+    <input type="checkbox" name="Monitor" id="Monitor">
+  </form>
+  <script src="./js/script.js"></script>
+  <script type="text/javascript">
+  function a1() {
+  document.getElementById("Infokus").checked = true;
+}
+  function a2() {
+  document.getElementById("Colokan").checked = true;
+}
+  function a3() {
+  document.getElementById("Monitor").checked = true;
+}
+function aw(){
+ alert("This course is already in your cart.");
+}
+  </script>
+  </body>
+</html>
